@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasinoDeals | Premium Affiliate 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer="" src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <script id="theme-config" type="application/json">
+{
+  "siteName": "CASINO",
+  "siteNameAccent": "DEALS",
+  "tagline": "Wir listen nur Casinos, die wir selbst getestet haben. Klar, ehrlich und zu 100 % transparent.",
+  "accentColor": "#6366f1",
+  "accentSecondary": "#8b5cf6",
+  "bgColor": "#050607",
+  "gws": {
+    "aktiv": false,
+    "label": "MAI SPECIAL",
+    "betrag": "2000",
+    "beschreibung": "Wir hauen im ganzen Mai richtig raus! Spiele in deinen Lieblings-Casinos und sichere dir Tickets für die große Verlosung.",
+    "von": "2026-05-01",
+    "bis": "2026-06-07",
+    "aufloesung": "7.06.2026 @ 0:00 Uhr",
+    "instagram": "https://instagram.com",
+    "formspreeId": "meenpggw",
+    "plaetze": [
+      {
+        "label": "1. PLATZ",
+        "wert": "1000€"
+      },
+      {
+        "label": "2. PLATZ",
+        "wert": "500€"
+      },
+      {
+        "label": "3. PLATZ",
+        "wert": "200€"
+      },
+      {
+        "label": "4-6. PLATZ",
+        "wert": "100€"
+      },
+      {
+        "label": "",
+        "wert": ""
+      },
+      {
+        "label": "",
+        "wert": ""
+      }
+    ],
+    "box1Titel": "🥇 VIP Tickets",
+    "box1Zeilen": "25€ Einzahlung | 5 Tickets\n50€ Einzahlung | 10 Tickets\n100€ Einzahlung | 20 Tickets",
+    "box2Titel": "🌍 Andere Casinos",
+    "box2Zeilen": "50€ Einzahlung | 15 Tickets\n100€ Einzahlung | 20 Tickets",
+    "box2Hinweis": ""
+  }
+}
+</script>
+
+    <style>
+        :root {
+            --accent:    #6366f1;
+            --accent-2:  #8b5cf6;
+            --accent-05: rgba(99,102,241,0.05);
+            --accent-10: rgba(99,102,241,0.10);
+            --accent-25: rgba(99,102,241,0.25);
+            --accent-40: rgba(99,102,241,0.40);
+            --accent-60: rgba(99,102,241,0.60);
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050607; color: #fff; }
+
+        .c-accent            { color: var(--accent) !important; }
+        .bg-accent           { background-color: var(--accent) !important; }
+        .glow-accent         { box-shadow: 0 0 10px var(--accent) !important; }
+        .shadow-accent-btn   { box-shadow: 0 8px 32px var(--accent-25) !important; }
+        .accent-gradient-text {
+            background: linear-gradient(to right, var(--accent), var(--accent-2));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .accent-gradient-bg { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+        .hero-glow           { background: radial-gradient(circle at 50% 20%, var(--accent-10) 0%, transparent 60%); }
+
+        .age-gate-bg   { background: radial-gradient(ellipse at 50% 55%, var(--accent-10) 0%, #050607 65%); }
+        .age-gate-card { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(32px); }
+        .badge-18-glow {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            filter: drop-shadow(0 0 30px var(--accent-60));
+        }
+        .gate-btn {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            box-shadow: 0 0 40px var(--accent-40), 0 0 80px var(--accent-10);
+            transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+        }
+        .gate-btn:hover  { box-shadow: 0 0 60px var(--accent-60), 0 0 120px var(--accent-25); transform: scale(1.02); }
+        .gate-btn:active { transform: scale(0.97); }
+        .diagonal-stripe { background: repeating-linear-gradient(45deg, var(--accent-05) 0px, var(--accent-05) 1px, transparent 1px, transparent 14px); }
+        @keyframes pulse-ring { 0% { transform:scale(0.88);opacity:.6; } 50% { transform:scale(1.12);opacity:.08; } 100% { transform:scale(0.88);opacity:.6; } }
+        .pulse-ring   { animation: pulse-ring 3.2s ease-in-out infinite; }
+        .pulse-ring-2 { animation: pulse-ring 3.2s ease-in-out infinite; animation-delay:.8s; }
+
+        .glass-nav { background: rgba(5,6,7,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.02); }
+        .mobile-menu { background: rgba(8,9,12,0.98); backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .burger-line { display:block; width:22px; height:2px; background:white; border-radius:2px; transition:all 0.3s cubic-bezier(0.4,0,0.2,1); transform-origin:center; }
+        .burger-open .burger-line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+        .burger-open .burger-line:nth-child(2) { opacity:0; transform:scaleX(0); }
+        .burger-open .burger-line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+        .search-input { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); transition: all 0.4s; }
+        .search-input:focus { border-color: var(--accent-40); background: rgba(255,255,255,0.04); outline: none; }
+        [x-cloak] { display: none !important; }
+        .casino-row { border: 1px solid rgba(255,255,255,0.04); transition: all 0.4s cubic-bezier(0.23,1,0.32,1); }
+        .casino-row:hover { border-color: var(--accent-25); background: rgba(255,255,255,0.012); transform: translateY(-3px); }
+
+        .admin-drawer { background: #08090c; border-left: 1px solid rgba(255,255,255,0.05); }
+        .admin-input { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); transition: border-color .3s; }
+        .admin-input:focus { border-color: var(--accent-40); outline: none; }
+        .color-picker-wrap input[type="color"] { width:44px;height:44px;border-radius:12px;cursor:pointer;border:2px solid rgba(255,255,255,0.1);padding:3px;background:transparent; }
+
+        ::-webkit-scrollbar { width:5px; }
+        ::-webkit-scrollbar-track { background:#050607; }
+        ::-webkit-scrollbar-thumb { background:#1a1c23;border-radius:10px; }
+        ::-webkit-scrollbar-thumb:hover { background:var(--accent); }
+
+        .gws-card { background: rgba(15,15,20,0.6); border: 1px solid rgba(255,255,255,0.06); }
+        .gws-prize-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+        .gws-ticket-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+        .gws-step-num { background: var(--accent); width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0; }
+        .gws-input { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius:14px; padding:16px 20px; width:100%; color:white; font-size:0.95rem; outline:none; transition:border-color 0.2s; }
+        .gws-input:focus { border-color: var(--accent-40); }
+        .gws-btn { width:100%; padding:18px; border-radius:14px; font-weight:800; font-size:0.95rem; letter-spacing:0.1em; color:white; border:none; cursor:pointer; transition:opacity 0.2s; background: var(--accent); }
+        .gws-btn:hover { opacity:0.85; }
+        @keyframes gws-glow { 0%,100%{box-shadow:0 0 8px var(--accent-40)} 50%{box-shadow:0 0 20px var(--accent-60)} }
+        .gws-active-nav { border: 1px solid var(--accent-40); border-radius:8px; padding:4px 10px; animation:gws-glow 2s ease-in-out infinite; }
+        .bo-toggle { position:relative; display:inline-flex; align-items:center; gap:12px; cursor:pointer; }
+        .bo-toggle input { display:none; }
+        .bo-toggle-track { width:48px; height:26px; background:rgba(255,255,255,0.1); border-radius:999px; transition:background 0.3s; position:relative; }
+        .bo-toggle input:checked ~ .bo-toggle-track { background: var(--accent); }
+        .bo-toggle-thumb { position:absolute; top:3px; left:3px; width:20px; height:20px; background:white; border-radius:50%; transition:transform 0.3s; }
+        .bo-toggle input:checked ~ .bo-toggle-track .bo-toggle-thumb { transform:translateX(22px); }
+
+        .support-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 24px; }
+        .support-coming-soon { background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.08); border-radius: 24px; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.z-10{z-index:10}.z-40{z-index:40}.z-\[200\]{z-index:200}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-7{margin-bottom:1.75rem}.mb-8{margin-bottom:2rem}.ml-auto{margin-left:auto}.mt-0\.5{margin-top:0.125rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-14{height:3.5rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-4{height:1rem}.h-7{height:1.75rem}.h-full{height:100%}.w-1{width:0.25rem}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-14{width:3.5rem}.w-2{width:0.5rem}.w-4{width:1rem}.w-7{width:1.75rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-\[480px\]{max-width:480px}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-\[5px\]{gap:5px}.-space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(-0.75rem * var(--tw-space-x-reverse));margin-left:calc(-0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-green-500\/20{border-color:rgb(34 197 94 / 0.2)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.border-white\/\[0\.02\]{border-color:rgb(255 255 255 / 0.02)}.border-white\/\[0\.04\]{border-color:rgb(255 255 255 / 0.04)}.border-white\/\[0\.05\]{border-color:rgb(255 255 255 / 0.05)}.border-white\/\[0\.06\]{border-color:rgb(255 255 255 / 0.06)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-green-500\/10{background-color:rgb(34 197 94 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/\[0\.02\]{background-color:rgb(255 255 255 / 0.02)}.bg-white\/\[0\.03\]{background-color:rgb(255 255 255 / 0.03)}.bg-white\/\[0\.04\]{background-color:rgb(255 255 255 / 0.04)}.p-1\.5{padding:0.375rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-14{padding-bottom:3.5rem}.pb-24{padding-bottom:6rem}.pb-32{padding-bottom:8rem}.pt-12{padding-top:3rem}.pt-16{padding-top:4rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[0\.95\]{line-height:0.95}.leading-relaxed{line-height:1.625}.tracking-\[0\.1em\]{letter-spacing:0.1em}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:opacity-80:hover{opacity:0.8}.active\:scale-75:active{--tw-scale-x:.75;--tw-scale-y:.75;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 768px){.md\:order-1{order:1}.md\:order-2{order:2}.md\:mb-12{margin-bottom:3rem}.md\:mb-14{margin-bottom:3.5rem}.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-96{width:24rem}.md\:w-auto{width:auto}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:justify-start{justify-content:flex-start}.md\:gap-10{gap:2.5rem}.md\:gap-6{gap:1.5rem}.md\:gap-7{gap:1.75rem}.md\:gap-8{gap:2rem}.md\:p-10{padding:2.5rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:py-16{padding-top:4rem;padding-bottom:4rem}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:pb-20{padding-bottom:5rem}.md\:pb-32{padding-bottom:8rem}.md\:pt-24{padding-top:6rem}.md\:text-left{text-align:left}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style></head>
+
+<body x-data="{
+    casinos: [
+        {
+            id:1, name:'Scored', kuerzel:'SC', logo:'logos/scored.png', farbe:'#6366f1',
+            bonus:'100% BIS ZU 1000\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Zahle bis zu 1000\u20ac ein und starte mit bis zu 2000\u20ac. Maximaler Einsatz 5\u20ac. Umsatz: 35x.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://urli.info/1p8bR'
+        },
+        {
+            id:2, name:'Slotoro', kuerzel:'SL', logo:'logos/Slotoro.png', farbe:'#a855f7',
+            bonus:'250% BIS ZU 1000\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Massiver 250% Boost. Deine Einzahlung wird mehr als vervierfacht. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://promo-click.com/l/69a94c09a7f059555a07b5b2?sub_id={sub_id_1}&amp;click_id={click_id}'
+        },
+        {
+            id:3, name:'Allyspin', kuerzel:'AS', logo:'logos/allyspin.png', farbe:'#ec4899',
+            bonus:'250% BIS ZU 1000\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Massiver 250% Boost. Deine Einzahlung wird mehr als vervierfacht. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://all.monalvor.com/?mid=266874_1569891'
+        },
+        {
+            id:4, name:'Legiano', kuerzel:'LG', logo:'logos/Legiano.png', farbe:'#22c55e',
+            bonus:'200% BIS ZU 3000\u20ac', minEinzahlung:'25\u20ac', typ:'sticky',
+            struktur:'Massiver 200% Boost. Deine Einzahlung wird vervierfacht. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser Variante verschmelzen Einzahlung und Bonus zu einer Einheit, wodurch das gesamte Guthaben sofort an feste Umsatzbedingungen gebunden ist. Ein Nachteil ist, dass selbst fr\u00fche Gewinne nicht ausgezahlt werden k\u00f6nnen, bis die Bedingungen vollst\u00e4ndig erf\u00fcllt sind, da das Bonusgeld fest im Casino \u201ekleben\u201c bleibt.',
+            link:'https://lgno.monalvor.com/?mid=266874_1569894'
+        },
+        {
+            id:5, name:'Spinbara', kuerzel:'SB', logo:'logos/Spinbara.png', farbe:'#f59e0b',
+            bonus:'100% BIS ZU 500\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Massiver 100% Boost. Deine Einzahlung wird verdoppelt. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://spnbr.monalvor.com/?mid=266874_1798346'
+        },
+        {
+            id:6, name:'AlfCasino', kuerzel:'AC', logo:'logos/AlfCasino.png', farbe:'#06b6d4',
+            bonus:'100% BIS ZU 500\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Massiver 100% Boost. Deine Einzahlung wird verdoppelt. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://alcw.monalvor.com/?mid=266874_1799884'
+        },
+        {
+            id:7, name:'Bankonbet', kuerzel:'BB', logo:'logos/Bankonbet.png', farbe:'#06b6d4',
+            bonus:'100% BIS ZU 500\u20ac', minEinzahlung:'25\u20ac', typ:'non-sticky',
+            struktur:'Massiver 100% Boost. Deine Einzahlung wird verdoppelt. Beachte die kombinierten Umsatzbedingungen.',
+            logik:'Bei dieser spielerfreundlichen Variante spielst du zuerst mit deinem Echtgeld, wodurch Gewinne jederzeit sofort auszahlbar sind, solange das Bonusguthaben unber\u00fchrt bleibt. Der Bonus dient dabei lediglich als \u201ezweite Chance\u201c, sodass du nicht vorzeitig an komplizierte Umsatzbedingungen gebunden bist.',
+            link:'https://bnkw.monalvor.com/?mid=266874_1798348'
+        }
+    ],
+
+    ageGate:true, search:'', filter:'all', currentPage:'deals', mobileMenu:false, filterOpen:false,
+
+    gws:{
+        aktiv:false, label:'MAI SPECIAL', betrag:'2000',
+        beschreibung:'Wir hauen im ganzen Mai richtig raus!',
+        von:'2026-05-01', bis:'2026-06-07', aufloesung:'7.06.2026 @ 0:00 Uhr',
+        instagram:'https://instagram.com', formspreeId:'',
+        plaetze:[
+            {label:'1. PLATZ',   wert:'1000\u20ac'},
+            {label:'2. PLATZ',   wert:'500\u20ac'},
+            {label:'3. PLATZ',   wert:'200\u20ac'},
+            {label:'4-6. PLATZ', wert:'100\u20ac'},
+            {label:'', wert:''}, {label:'', wert:''},
+        ],
+        box1Titel:'\uD83E\uDD47 VIP Tickets',
+        box1Zeilen:'25\u20ac Einzahlung | 5 Tickets\n50\u20ac Einzahlung | 10 Tickets\n100\u20ac Einzahlung | 20 Tickets',
+        box2Titel:'\uD83C\uDF0D Andere Casinos',
+        box2Zeilen:'50\u20ac Einzahlung | 15 Tickets\n100\u20ac Einzahlung | 20 Tickets',
+        box2Hinweis:'',
+    },
+    gwsEmail:'', gwsSubmitting:false, gwsSuccess:false, gwsError:false,
+    nlEmail:'',  nlSubmitting:false,  nlSuccess:false,  nlError:false,
+
+    adminOpen:false, adminAuthed:false, adminPwInput:'', adminPwError:false,
+    adminPwSaved:false, adminTab:'farben', adminPw:'admin2026', dotClicks:0, dotTimer:null,
+
+    theme:{
+        siteName:'CASINO', siteNameAccent:'DEALS',
+        tagline:'Wir listen nur Casinos, die wir selbst getestet haben.\u00a0Klar, ehrlich und zu\u00a0100\u00a0% transparent.',
+        accentColor:'#6366f1', accentSecondary:'#8b5cf6', bgColor:'#050607',
+    },
+    presets:[
+        {name:'Indigo', a:'#6366f1', b:'#8b5cf6', bg:'#050607'},
+        {name:'Gold',   a:'#f59e0b', b:'#d97706', bg:'#060401'},
+        {name:'Smaragd',a:'#10b981', b:'#059669', bg:'#010c05'},
+        {name:'Rose',   a:'#f43f5e', b:'#e11d48', bg:'#070103'},
+        {name:'Cyan',   a:'#06b6d4', b:'#0891b2', bg:'#01080f'},
+    ],
+
+    get gefilterteCasinos(){
+        return this.casinos.filter(c=&gt;{
+            const typOk = this.filter==='all'||c.typ===this.filter;
+            const suchOk = c.name.toLowerCase().includes(this.search.toLowerCase())||c.bonus.toLowerCase().includes(this.search.toLowerCase());
+            return typOk&amp;&amp;suchOk;
+        });
+    },
+    get badgeCasinos(){return this.casinos.slice(0,3);},
+    gwsBox1Rows(){return(this.gws.box1Zeilen||'').split('\n').filter(r=&gt;r.trim());},
+    gwsBox2Rows(){return(this.gws.box2Zeilen||'').split('\n').filter(r=&gt;r.trim());},
+    get gwsFilledPlaetze(){return(this.gws.plaetze||[]).filter(p=&gt;p.wert&amp;&amp;p.wert.trim());},
+    gwsPrizeGridClass(){
+        const n=this.gwsFilledPlaetze.length;
+        if(n&lt;=1)return'grid grid-cols-1 max-w-xs mx-auto gap-4 mb-10';
+        if(n===2)return'grid grid-cols-2 max-w-sm mx-auto gap-4 mb-10';
+        if(n===3)return'grid grid-cols-3 gap-4 mb-10';
+        return'grid grid-cols-2 md:grid-cols-4 gap-4 mb-10';
+    },
+
+    navTo(page){this.currentPage=page;this.mobileMenu=false;},
+
+    scrollToDeals(){
+        this.currentPage='deals'; this.mobileMenu=false;
+        this.$nextTick(()=&gt;{const el=document.getElementById('listing');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});
+    },
+
+    async submitGewinnspiel(){
+        if(!this.gws.formspreeId){alert('Formspree-ID fehlt! Bitte im Backoffice unter GWS eintragen.');return;}
+        this.gwsSubmitting=true; this.gwsSuccess=false; this.gwsError=false;
+        try{
+            const fd=new FormData();
+            fd.append('email',this.gwsEmail);
+            fd.append('typ','Gewinnspiel-Teilnahme');
+            fd.append('gewinnspiel',this.gws.label+' \u2014 '+this.gws.betrag+'\u20ac');
+            fd.append('_subject','\uD83C\uDF89 GWS-Teilnahme: '+this.gwsEmail);
+            const res=await fetch('https://formspree.io/f/'+this.gws.formspreeId,{method:'POST',headers:{'Accept':'application/json'},body:fd});
+            if(res.ok){this.gwsSuccess=true;this.gwsEmail='';}
+            else{this.gwsError=true;}
+        }catch(e){this.gwsError=true;}
+        this.gwsSubmitting=false;
+    },
+
+    async submitNewsletter(){
+        if(!this.gws.formspreeId){alert('Formspree-ID fehlt! Bitte im Backoffice unter GWS eintragen.');return;}
+        this.nlSubmitting=true; this.nlSuccess=false; this.nlError=false;
+        try{
+            const fd=new FormData();
+            fd.append('email',this.nlEmail);
+            fd.append('typ','Newsletter-Anmeldung');
+            fd.append('_subject','\uD83D\uDCE7 Newsletter: '+this.nlEmail);
+            const res=await fetch('https://formspree.io/f/'+this.gws.formspreeId,{method:'POST',headers:{'Accept':'application/json'},body:fd});
+            if(res.ok){this.nlSuccess=true;this.nlEmail='';}
+            else{this.nlError=true;}
+        }catch(e){this.nlError=true;}
+        this.nlSubmitting=false;
+    },
+
+    applyTheme(){
+        const r=document.documentElement;
+        const a=this.theme.accentColor,a2=this.theme.accentSecondary;
+        const rgba=(hex,al)=&gt;{const rv=parseInt(hex.slice(1,3),16),gv=parseInt(hex.slice(3,5),16),bv=parseInt(hex.slice(5,7),16);return'rgba('+rv+','+gv+','+bv+','+al+')';};
+        r.style.setProperty('--accent',a); r.style.setProperty('--accent-2',a2);
+        r.style.setProperty('--accent-05',rgba(a,.05)); r.style.setProperty('--accent-10',rgba(a,.10));
+        r.style.setProperty('--accent-25',rgba(a,.25)); r.style.setProperty('--accent-40',rgba(a,.40));
+        r.style.setProperty('--accent-60',rgba(a,.60));
+        document.body.style.backgroundColor=this.theme.bgColor;
+    },
+
+    saveTheme(){cdDownload(this.theme,this.gws);this.adminPwSaved=true;setTimeout(()=&gt;{this.adminPwSaved=false;},2000);},
+
+    loadTheme(){
+        try{
+            const el=document.getElementById('theme-config');
+            if(el){const cfg=JSON.parse(el.textContent);Object.assign(this.theme,cfg);if(cfg.gws)Object.assign(this.gws,cfg.gws);}
+        }catch(e){}
+    },
+
+    resetTheme(){
+        Object.assign(this.theme,{siteName:'CASINO',siteNameAccent:'DEALS',tagline:'Wir listen nur Casinos, die wir selbst getestet haben.',accentColor:'#6366f1',accentSecondary:'#8b5cf6',bgColor:'#050607'});
+        this.applyTheme();
+    },
+
+    applyPreset(p){this.theme.accentColor=p.a;this.theme.accentSecondary=p.b;this.theme.bgColor=p.bg;this.applyTheme();},
+
+    handleDotClick(){
+        this.dotClicks++;clearTimeout(this.dotTimer);
+        this.dotTimer=setTimeout(()=&gt;{this.dotClicks=0;},2000);
+        if(this.dotClicks&gt;=5){this.dotClicks=0;this.adminOpen=true;}
+    },
+
+    adminLogin(){
+        if(this.adminPwInput===this.adminPw){this.adminAuthed=true;this.adminPwError=false;this.adminPwInput='';}
+        else{this.adminPwError=true;setTimeout(()=&gt;{this.adminPwError=false;},2200);}
+    },
+}" x-init="
+    loadTheme(); applyTheme();
+    $watch('theme.accentColor',()=&gt;applyTheme());
+    $watch('theme.accentSecondary',()=&gt;applyTheme());
+    $watch('theme.bgColor',()=&gt;applyTheme());
+    const self=$data;
+    window.addEventListener('keydown',e=&gt;{if(e.ctrlKey&amp;&amp;e.altKey&amp;&amp;e.key==='a')self.adminOpen=!self.adminOpen;});
+">
+
+<!-- AGE GATE -->
+<template x-if="ageGate">
+    <div class="fixed inset-0 z-[100] flex items-center justify-center age-gate-bg">
+        <div class="absolute inset-0 diagonal-stripe pointer-events-none"></div>
+        <div class="absolute w-[520px] h-[520px] rounded-full border pulse-ring pointer-events-none" style="border-color:var(--accent-10)"></div>
+        <div class="absolute w-[380px] h-[380px] rounded-full border pulse-ring-2 pointer-events-none" style="border-color:var(--accent-25)"></div>
+        <div class="relative max-w-sm w-full mx-6 age-gate-card rounded-[2.5rem] overflow-hidden">
+            <div class="h-[3px] w-full accent-gradient-bg"></div>
+            <div class="p-12 text-center">
+                <div class="relative inline-block mb-8">
+                    <div class="absolute inset-0 rounded-full blur-3xl scale-150" style="background:var(--accent-10)"></div>
+                    <div class="relative w-24 h-24 rounded-full flex items-center justify-center mx-auto border" style="background:var(--accent-05);border-color:var(--accent-25)">
+                        <span class="text-4xl font-black badge-18-glow">18+</span>
+                    </div>
+                </div>
+                <h2 class="text-2xl font-extrabold mb-3 tracking-tight">Altersprüfung</h2>
+                <p class="text-gray-400 text-sm mb-10 leading-relaxed font-medium max-w-[270px] mx-auto">Bist du volljährig? Unsere Deals sind ausschließlich für Personen über 18 Jahren zugänglich.</p>
+                <div class="space-y-4">
+                    <button @click="ageGate=false" class="gate-btn w-full text-white py-4 rounded-full font-extrabold text-sm tracking-widest uppercase">Ja, ich bin volljährig</button>
+                    <a href="https://www.google.de" class="block text-gray-700 hover:text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold transition-colors pt-1">Verlassen</a>
+                </div>
+            </div>
+            <div class="px-8 pb-8 text-center"><p class="text-[9px] text-gray-700 font-bold tracking-wide">Glücksspiel kann süchtig machen · Hilfe: <span class="text-gray-500">www.check-dein-spiel.de</span></p></div>
+        </div>
+    </div>
+</template>
+
+<!-- ADMIN BACKOFFICE -->
+<div x-show="adminOpen" x-cloak="" class="fixed inset-0 z-[200] flex">
+    <div @click="adminOpen=false" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div class="admin-drawer relative ml-auto w-full max-w-[480px] h-full flex flex-col overflow-hidden" x-transition:enter="transition-transform duration-400 ease-out" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition-transform duration-300 ease-in" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full">
+
+        <template x-if="!adminAuthed">
+            <div class="flex-1 flex items-center justify-center p-10">
+                <div class="w-full max-w-xs">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 accent-gradient-bg">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <div class="text-[9px] font-black uppercase tracking-[0.4em] mb-1 c-accent">Backoffice</div>
+                    <h2 class="text-2xl font-extrabold mb-8 tracking-tight">Zugang</h2>
+                    <input type="password" x-model="adminPwInput" @keydown.enter="adminLogin()" placeholder="Passwort …" class="admin-input w-full rounded-2xl px-6 py-4 text-sm font-bold mb-3 text-white" :class="adminPwError?'border-red-500/60':''">
+                    <p x-show="adminPwError" class="text-red-400 text-xs font-bold mb-4 pl-1">Falsches Passwort.</p>
+                    <button @click="adminLogin()" class="gate-btn w-full text-white py-4 rounded-full font-black text-xs tracking-widest uppercase mt-1">Einloggen</button>
+                    <button @click="adminOpen=false" class="w-full mt-4 py-3 text-gray-600 hover:text-gray-400 text-[10px] font-black uppercase tracking-widest transition-colors">Abbrechen</button>
+                </div>
+            </div>
+        </template>
+
+        <template x-if="adminAuthed">
+            <div class="flex flex-col h-full">
+                <div class="p-7 border-b border-white/[0.05] flex items-center justify-between flex-shrink-0">
+                    <div><div class="text-[9px] font-black uppercase tracking-[0.4em] mb-0.5 c-accent">Admin</div><h2 class="text-xl font-extrabold tracking-tight">Backoffice</h2></div>
+                    <button @click="adminOpen=false" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-all text-sm font-bold">✕</button>
+                </div>
+                <div class="flex border-b border-white/[0.05] flex-shrink-0">
+                    <button @click="adminTab='farben'" class="px-5 py-5 text-[10px] font-black uppercase tracking-widest transition-all border-b-2" :class="adminTab==='farben'?'text-white':'text-gray-600 border-transparent'" :style="adminTab==='farben'?'border-color:var(--accent)':''">Farben</button>
+                    <button @click="adminTab='branding'" class="px-5 py-5 text-[10px] font-black uppercase tracking-widest transition-all border-b-2" :class="adminTab==='branding'?'text-white':'text-gray-600 border-transparent'" :style="adminTab==='branding'?'border-color:var(--accent)':''">Branding</button>
+                    <button @click="adminTab='gewinnspiel'" class="px-5 py-5 text-[10px] font-black uppercase tracking-widest transition-all border-b-2 relative" :class="adminTab==='gewinnspiel'?'text-white':'text-gray-600 border-transparent'" :style="adminTab==='gewinnspiel'?'border-color:var(--accent)':''">
+                        🎉 GWS<template x-if="gws.aktiv"><span class="absolute top-3 right-1 w-1.5 h-1.5 rounded-full" style="background:var(--accent)"></span></template>
+                    </button>
+                </div>
+
+                <div x-show="adminTab==='farben'" class="flex-1 overflow-y-auto p-7 space-y-9">
+                    <div>
+                        <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 mb-5">Farbschema-Presets</p>
+                        <div class="grid grid-cols-5 gap-3">
+                            <template x-for="preset in presets" :key="preset.name">
+                                <button @click="applyPreset(preset)" class="group flex flex-col items-center gap-2.5">
+                                    <div class="w-full aspect-square rounded-2xl border-2 border-white/5 group-hover:border-white/25 transition-all duration-300 overflow-hidden" :style="`background:linear-gradient(135deg,${preset.a},${preset.b})`"></div>
+                                    <span class="text-[9px] font-bold text-gray-600 group-hover:text-white transition-colors" x-text="preset.name"></span>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 mb-5">Eigene Farben</p>
+                        <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] flex items-center justify-between"><div><p class="text-sm font-bold">Primärfarbe</p><p class="text-[10px] text-gray-600 mt-0.5">Buttons, Akzente, Leuchten</p></div><div class="flex items-center gap-3 color-picker-wrap"><span class="text-[10px] font-mono text-gray-500" x-text="theme.accentColor.toUpperCase()"></span><input type="color" x-model="theme.accentColor"></div></div>
+                        <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] flex items-center justify-between"><div><p class="text-sm font-bold">Sekundärfarbe</p><p class="text-[10px] text-gray-600 mt-0.5">Gradient-Verlauf, Glow</p></div><div class="flex items-center gap-3 color-picker-wrap"><span class="text-[10px] font-mono text-gray-500" x-text="theme.accentSecondary.toUpperCase()"></span><input type="color" x-model="theme.accentSecondary"></div></div>
+                        <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] flex items-center justify-between"><div><p class="text-sm font-bold">Hintergrundfarbe</p><p class="text-[10px] text-gray-600 mt-0.5">Website-Hintergrund</p></div><div class="flex items-center gap-3 color-picker-wrap"><span class="text-[10px] font-mono text-gray-500" x-text="theme.bgColor.toUpperCase()"></span><input type="color" x-model="theme.bgColor"></div></div>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 mb-4">Live-Vorschau</p>
+                        <div class="p-6 rounded-2xl border" :style="`background:${theme.bgColor};border-color:var(--accent-25)`">
+                            <div class="flex items-center gap-2.5 mb-5"><div class="w-2 h-2 rounded-full glow-accent" style="background:var(--accent)"></div><span class="font-black text-sm tracking-[0.15em]" x-text="theme.siteName"></span><span class="font-black text-sm tracking-[0.15em] c-accent" x-text="theme.siteNameAccent"></span></div>
+                            <div class="flex gap-3 flex-wrap"><button class="px-5 py-2.5 rounded-full text-xs font-black text-white" style="background:var(--accent)">DEAL SICHERN</button><span class="text-[10px] font-bold px-4 py-2.5 rounded-lg border c-accent" style="background:var(--accent-05);border-color:var(--accent-25)">NON-STICKY</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="adminTab==='branding'" class="flex-1 overflow-y-auto p-7 space-y-5">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 mb-1">Website-Branding</p>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Site-Name (Teil 1)</label><input x-model="theme.siteName" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm font-black text-white tracking-[0.15em]"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Site-Name (Akzent-Teil)</label><input x-model="theme.siteNameAccent" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm font-black tracking-[0.15em] c-accent"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Tagline</label><textarea x-model="theme.tagline" rows="3" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-gray-300 font-medium resize-none"></textarea></div>
+                    <div class="border-t border-white/[0.05] pt-5 space-y-2">
+                        <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 mb-4">Sicherheit</p>
+                        <label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Backoffice-Passwort</label>
+                        <input x-model="adminPw" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm font-mono text-white">
+                        <p class="text-[9px] text-gray-700 pl-1">Wird sofort aktiv. Beim Speichern in die Datei geschrieben.</p>
+                    </div>
+                </div>
+
+                <div x-show="adminTab==='gewinnspiel'" class="flex-1 overflow-y-auto p-7 space-y-5">
+                    <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] flex items-center justify-between"><div><p class="text-sm font-bold">Gewinnspiel aktiv</p><p class="text-[10px] text-gray-600 mt-0.5">Schaltet die GWS-Seite ein/aus</p></div><label class="bo-toggle"><input type="checkbox" x-model="gws.aktiv"><div class="bo-toggle-track"><div class="bo-toggle-thumb"></div></div></label></div>
+                    <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] flex items-center justify-between"><div><p class="text-sm font-bold">GWS-Seite anzeigen</p><p class="text-[10px] text-gray-600 mt-0.5">Wechselt direkt zur GWS-Ansicht</p></div><button @click="currentPage=currentPage==='gewinnspiel'?'deals':'gewinnspiel'" class="px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all" :style="currentPage==='gewinnspiel'?'background:var(--accent);color:white':'background:rgba(255,255,255,0.06);color:#94a3b8'"><span x-text="currentPage==='gewinnspiel'?'● GWS Aktiv':'Zur GWS'"></span></button></div>
+                    <hr class="border-white/[0.05]"><p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">Inhalt</p>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Badge-Label</label><input x-model="gws.label" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Gesamtbetrag (nur Zahl)</label><input x-model="gws.betrag" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Beschreibungstext</label><textarea x-model="gws.beschreibung" rows="2" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-gray-300 resize-none"></textarea></div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Startdatum</label><input x-model="gws.von" type="date" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                        <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Enddatum</label><input x-model="gws.bis" type="date" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    </div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Auflösungstext</label><input x-model="gws.aufloesung" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Instagram-Link</label><input x-model="gws.instagram" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <hr class="border-white/[0.05]">
+                    <div class="flex items-center justify-between"><p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">Preisplätze</p><p class="text-[9px] text-gray-600">Leer = wird nicht angezeigt</p></div>
+                    <div class="space-y-3">
+                        <template x-for="(platz,i) in gws.plaetze" :key="i">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-black flex-shrink-0" :style="i===0?'background:var(--accent);color:white':'background:rgba(255,255,255,0.06);color:#6b7280'" x-text="i+1"></div>
+                                <input :value="platz.label" @input="gws.plaetze[i].label=$event.target.value" type="text" placeholder="Label (z.B. 1. PLATZ)" class="admin-input flex-1 rounded-xl px-3 py-2.5 text-xs text-white">
+                                <input :value="platz.wert" @input="gws.plaetze[i].wert=$event.target.value" type="text" placeholder="Betrag (z.B. 500€)" class="admin-input w-28 rounded-xl px-3 py-2.5 text-xs text-white font-mono">
+                            </div>
+                        </template>
+                    </div>
+                    <hr class="border-white/[0.05]"><p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">Ticket-Boxen</p>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Box 1 – Titel</label><input x-model="gws.box1Titel" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Box 1 – Zeilen ("Text | Wert", eine pro Zeile)</label><textarea x-model="gws.box1Zeilen" rows="3" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-gray-300 resize-none font-mono"></textarea></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Box 2 – Titel</label><input x-model="gws.box2Titel" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Box 2 – Zeilen</label><textarea x-model="gws.box2Zeilen" rows="2" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-gray-300 resize-none font-mono"></textarea></div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Box 2 – Fußnote (optional)</label><input x-model="gws.box2Hinweis" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm text-white"></div>
+                    <hr class="border-white/[0.05]"><p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">E-Mail via Formspree (kostenlos)</p>
+                    <div class="p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] text-[11px] text-gray-500 leading-relaxed space-y-2">
+                        <p>1. <strong class="text-white">formspree.io</strong> → Konto erstellen</p>
+                        <p>2. Neues Formular → Benachrichtigungs-E-Mail setzen</p>
+                        <p>3. Form-ID (8 Zeichen) unten eintragen</p>
+                        <p class="text-gray-600">Kostenlos bis 50 Einträge/Monat</p>
+                    </div>
+                    <div class="space-y-2"><label class="text-[9px] font-black text-gray-600 uppercase tracking-widest pl-1">Formspree-ID (z.B. "xpwzabcd")</label><input x-model="gws.formspreeId" type="text" class="admin-input w-full rounded-2xl px-5 py-4 text-sm font-mono text-white" placeholder="xpwzabcd"></div>
+                </div>
+
+                <div class="p-7 border-t border-white/[0.05] flex gap-3 flex-shrink-0">
+                    <button @click="saveTheme()" class="flex-1 py-4 rounded-full font-black text-xs tracking-widest text-white transition-all" :style="adminPwSaved?'background:#22c55e':'background:var(--accent)'">
+                        <span x-text="adminPwSaved?'\u2713 DOWNLOAD GESTARTET':'\uD83D\uDCBE DATEI SPEICHERN'"></span>
+                    </button>
+                    <button @click="resetTheme()" class="px-6 py-4 rounded-full font-black text-xs tracking-widest text-gray-500 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] transition-all">RESET</button>
+                </div>
+            </div>
+        </template>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="glass-nav sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="text-lg font-black tracking-[0.2em] flex items-center gap-3">
+            <div @click="handleDotClick()" class="w-2 h-2 rounded-full cursor-pointer select-none transition-transform active:scale-75 glow-accent" style="background:var(--accent)"></div>
+            <button @click="navTo('deals')" class="flex items-center hover:opacity-80 transition-opacity" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;letter-spacing:inherit;color:inherit">
+                <span x-text="theme.siteName"></span><span class="c-accent" x-text="theme.siteNameAccent"></span>
+            </button>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <button @click="navTo('deals')" class="text-[10px] font-bold uppercase tracking-widest transition" :class="currentPage==='deals'?'text-white':'text-gray-500 hover:text-white'">Alle Deals</button>
+            <button @click="navTo('gewinnspiel')" class="text-[10px] font-bold uppercase tracking-widest transition relative" :class="currentPage==='gewinnspiel'?'text-white':'text-gray-500 hover:text-white'" :style="gws.aktiv?'color:white':''">
+                <span :class="gws.aktiv?'gws-active-nav':''" x-text="gws.aktiv?'🎉 Gewinnspiel':'Gewinnspiel'"></span>
+                <template x-if="gws.aktiv"><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full animate-pulse" style="background:var(--accent)"></span></template>
+            </button>
+            <button @click="navTo('support')" class="px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest transition" :class="currentPage==='support'?'bg-white/10 text-white border-white/20':'text-gray-300 hover:bg-white/10'">Support</button>
+        </nav>
+        <div class="flex md:hidden items-center gap-4">
+            <template x-if="gws.aktiv">
+                <button @click="navTo('gewinnspiel')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-wider" style="background:var(--accent-10);border:1px solid var(--accent-25);color:var(--accent)">
+                    <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:var(--accent)"></span>GWS
+                </button>
+            </template>
+            <button @click="mobileMenu=!mobileMenu" class="w-10 h-10 flex flex-col justify-center items-center gap-[5px] rounded-xl bg-white/5 hover:bg-white/10 transition-colors" :class="mobileMenu?'burger-open':''" aria-label="Menü">
+                <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+            </button>
+        </div>
+    </div>
+    <div x-show="mobileMenu" x-transition:enter="transition-all duration-300 ease-out" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2" x-cloak="" class="mobile-menu md:hidden">
+        <div class="max-w-6xl mx-auto px-6 py-5 space-y-1">
+            <button @click="navTo('deals')" class="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-left transition-all" :class="currentPage==='deals'?'bg-white/[0.06] text-white':'text-gray-400 hover:bg-white/[0.04] hover:text-white'">
+                <span class="font-bold text-sm">Alle Deals</span><svg class="w-4 h-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            <button @click="navTo('gewinnspiel')" class="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-left transition-all" :class="currentPage==='gewinnspiel'?'bg-white/[0.06] text-white':'text-gray-400 hover:bg-white/[0.04] hover:text-white'">
+                <span class="font-bold text-sm flex items-center gap-2">
+                    <template x-if="gws.aktiv"><span>🎉</span></template>
+                    Gewinnspiel
+                    <template x-if="gws.aktiv"><span class="text-[9px] font-black px-2 py-0.5 rounded-full" style="background:var(--accent-10);color:var(--accent);border:1px solid var(--accent-25)">LIVE</span></template>
+                </span>
+                <svg class="w-4 h-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            <button @click="navTo('support')" class="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-left transition-all" :class="currentPage==='support'?'bg-white/[0.06] text-white':'text-gray-400 hover:bg-white/[0.04] hover:text-white'">
+                <span class="font-bold text-sm">Support</span><svg class="w-4 h-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- DEALS PAGE -->
+<div x-show="currentPage==='deals'">
+<section class="relative overflow-hidden hero-glow pt-16 md:pt-24 pb-14 md:pb-20 border-b border-white/[0.02]">
+    <div class="max-w-6xl mx-auto px-6 relative z-10 text-center md:text-left">
+        <div class="flex flex-wrap gap-3 mb-8 justify-center md:justify-start">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/5 text-gray-400 text-[9px] font-bold uppercase tracking-[0.3em]"><span class="w-1 h-1 bg-green-500 rounded-full animate-pulse"></span>Live Deals • Mai 2026</div>
+            <template x-if="gws.aktiv">
+                <button @click="currentPage='gewinnspiel'" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[9px] font-bold uppercase tracking-[0.3em] transition-all" style="background:var(--accent-10);border:1px solid var(--accent-25);color:var(--accent)">
+                    <span class="w-1 h-1 rounded-full animate-pulse" style="background:var(--accent)"></span>🎉 <span x-text="gws.betrag+'€ Gewinnspiel läuft!'"></span>
+                </button>
+            </template>
+        </div>
+        <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter leading-[0.95] mb-8">Der neue Standard<br><span class="accent-gradient-text">in der Vermittlung.</span></h1>
+        <p class="text-gray-500 max-w-2xl text-base md:text-xl leading-relaxed mb-10 md:mb-12 font-medium" x-text="theme.tagline"></p>
+        <div class="flex flex-col md:flex-row gap-5 md:gap-6 items-center">
+            <button @click="scrollToDeals()" class="w-full md:w-auto px-10 py-5 bg-white text-black rounded-full font-black text-xs uppercase tracking-widest shadow-2xl transition-all duration-500" @mouseover="$el.style.background='var(--accent)';$el.style.color='white'" @mouseleave="$el.style.background='white';$el.style.color='black'">Jetzt Deals entdecken</button>
+            <div class="flex items-center gap-4">
+                <div class="flex -space-x-3">
+                    <template x-for="casino in badgeCasinos" :key="casino.id">
+                        <div class="w-10 h-10 rounded-full border-2 flex items-center justify-center overflow-hidden transition-all duration-300 hover:scale-110 hover:z-10" :style="`border-color:${casino.farbe}40;background:${casino.farbe}18`" :title="casino.name">
+                            <template x-if="casino.logo"><img :src="casino.logo" :alt="casino.name" class="w-full h-full object-contain p-1"></template>
+                            <template x-if="!casino.logo"><span class="text-[9px] font-black" :style="`color:${casino.farbe}`" x-text="casino.kuerzel"></span></template>
+                        </div>
+                    </template>
+                    <template x-if="casinos.length&gt;3"><div class="w-10 h-10 rounded-full border-2 border-white/10 bg-white/5 flex items-center justify-center text-[9px] font-black text-gray-400">+<span x-text="casinos.length-3"></span></div></template>
+                </div>
+                <div><p class="text-sm font-black text-white" x-text="casinos.length+' Aktive'"></p><p class="text-[9px] font-bold text-gray-600 uppercase tracking-widest">Partnerschaften</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="listing" class="max-w-6xl mx-auto px-6 pt-12 md:pt-24">
+    <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-end justify-between mb-10 md:mb-12">
+        <div class="space-y-4 w-full md:w-auto">
+            <h2 class="text-[10px] font-black uppercase tracking-[0.4em] c-accent">Kuratierte Auswahl</h2>
+            <div class="flex gap-3 md:hidden">
+                <input x-model="search" type="text" placeholder="Suchen …" class="search-input flex-1 px-5 py-4 rounded-2xl text-xs font-bold tracking-wide text-white">
+                <button @click="filterOpen=!filterOpen" class="flex-shrink-0 w-14 h-14 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all" :style="filterOpen?'background:var(--accent)':'background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)'">
+                    <svg class="w-4 h-4" :class="filterOpen?'text-white':'text-gray-400'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 4h18M7 12h10M11 20h2"></path></svg>
+                    <span class="text-[8px] font-black uppercase tracking-wider" :class="filterOpen?'text-white':'text-gray-600'">Filter</span>
+                </button>
+            </div>
+            <div x-show="filterOpen" x-transition:enter="transition-all duration-250 ease-out" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition-all duration-150 ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1" x-cloak="" class="md:hidden p-1.5 bg-white/[0.02] rounded-2xl border border-white/[0.05] flex gap-1">
+                <button @click="filter='all';filterOpen=false" class="flex-1 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-200" :class="filter==='all'?'bg-white text-black':'text-gray-500'">Alle</button>
+                <button @click="filter='non-sticky';filterOpen=false" class="flex-1 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-200" :class="filter==='non-sticky'?'bg-white text-black':'text-gray-500'">Non-Sticky</button>
+                <button @click="filter='sticky';filterOpen=false" class="flex-1 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-200" :class="filter==='sticky'?'bg-white text-black':'text-gray-500'">Sticky</button>
+            </div>
+            <div class="relative w-full md:w-96 hidden md:block"><input x-model="search" type="text" placeholder="Casino oder Bonus suchen …" class="search-input w-full px-8 py-4 rounded-2xl text-xs font-bold tracking-wide text-white"></div>
+        </div>
+        <div class="hidden md:flex p-1.5 bg-white/[0.02] rounded-2xl border border-white/[0.05]">
+            <button @click="filter='all'" :class="filter==='all'?'bg-white text-black':'text-gray-500'" class="px-7 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-300">Alle</button>
+            <button @click="filter='non-sticky'" :class="filter==='non-sticky'?'bg-white text-black':'text-gray-500'" class="px-7 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-300">Non-Sticky</button>
+            <button @click="filter='sticky'" :class="filter==='sticky'?'bg-white text-black':'text-gray-500'" class="px-7 py-3 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] transition-all duration-300">Sticky</button>
+        </div>
+    </div>
+</section>
+
+<main class="max-w-6xl mx-auto px-6 pb-32 space-y-5">
+    <template x-if="gefilterteCasinos.length===0"><div class="text-center py-24 text-gray-700 font-bold text-sm tracking-wide">Keine Casinos gefunden.</div></template>
+    <template x-for="casino in gefilterteCasinos" :key="casino.id">
+        <div x-data="{open:false}" class="casino-row bg-[#0c0d10]/40 rounded-[2.5rem] overflow-hidden">
+            <div class="p-5 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-16">
+
+                <!-- ★ FIX 1: Logo immer hell (kein opacity), größer ★ -->
+                <div class="w-28 h-16 md:w-36 md:h-20 rounded-2xl flex items-center justify-center border overflow-hidden flex-shrink-0" :style="`background:${casino.farbe}08;border-color:${casino.farbe}18`">
+                    <template x-if="casino.logo"><img :src="casino.logo" :alt="casino.name" class="w-full h-full object-contain p-3"></template>
+                    <template x-if="!casino.logo"><span class="font-black text-xl tracking-tight" :style="`color:${casino.farbe}`" x-text="casino.kuerzel"></span></template>
+                </div>
+
+                <div class="flex-grow text-center md:text-left">
+                    <h3 class="text-lg md:text-xl font-bold mb-3 tracking-tight" x-text="casino.name"></h3>
+                    <!-- ★ FIX 2: Badges etwas größer ★ -->
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                        <span class="text-[10px] font-bold px-4 py-2.5 rounded-lg uppercase tracking-widest border c-accent" style="background:var(--accent-05);border-color:var(--accent-10)" x-text="casino.bonus"></span>
+                        <span class="bg-white/5 text-gray-400 text-[10px] font-bold px-4 py-2.5 rounded-lg uppercase tracking-widest border border-white/[0.05] font-mono" x-text="casino.typ"></span>
+                        <template x-if="casino.minEinzahlung">
+                            <span class="bg-white/[0.03] text-gray-500 text-[10px] font-bold px-4 py-2.5 rounded-lg uppercase tracking-widest border border-white/[0.04] flex items-center gap-1.5">
+                                <svg class="w-3.5 h-3.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Min. <span x-text="casino.minEinzahlung"></span>
+                            </span>
+                        </template>
+                    </div>
+                </div>
+
+                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-5 w-full md:w-56 flex-shrink-0">
+                    <a :href="casino.link" class="flex-1 md:w-full text-white text-center py-3 md:py-4 rounded-full font-bold text-xs tracking-widest transition-all duration-300 shadow-accent-btn" style="background:var(--accent)" @mouseover="$el.style.opacity='.8'" @mouseleave="$el.style.opacity='1'">DEAL SICHERN</a>
+                    <button @click="open=!open" class="flex items-center gap-2 text-[9px] font-black text-gray-600 hover:text-white transition-colors tracking-[0.3em] whitespace-nowrap">
+                        <span x-text="open?'WENIGER':'DETAILS'"></span>
+                        <svg :class="open?'rotate-180':''" class="w-3 h-3 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div x-show="open" x-collapse="" x-cloak="" class="bg-black/20 border-t border-white/[0.02] p-6 md:p-14">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-16 text-[13px] leading-relaxed text-gray-500 font-medium">
+                    <div class="space-y-4"><p class="text-white font-bold tracking-tight text-base">Bonus-Struktur</p><p x-text="casino.struktur"></p></div>
+                    <div class="space-y-3"><p class="font-black text-[10px] uppercase tracking-[0.3em] c-accent" x-text="casino.typ==='sticky'?'Sticky-Logik':'Non-Sticky-Logik'"></p><p x-text="casino.logik"></p></div>
+                </div>
+            </div>
+        </div>
+    </template>
+</main>
+</div>
+
+<!-- GEWINNSPIEL PAGE -->
+<div x-show="currentPage==='gewinnspiel'" class="max-w-4xl mx-auto px-4 md:px-6 py-10 md:py-16 pb-24 md:pb-32">
+    <template x-if="gws.aktiv">
+        <div class="gws-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-14">
+            <div class="text-center mb-10 md:mb-12">
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[11px] font-black uppercase tracking-widest mb-7" style="background:var(--accent-10);border:1px solid var(--accent-25);color:var(--accent)"><span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background:var(--accent)"></span><span x-text="gws.label"></span></div>
+                <h1 class="text-4xl md:text-7xl font-black tracking-tighter mb-5"><span x-text="gws.betrag+'€'"></span><span class="accent-gradient-text"> Gewinnspiel</span></h1>
+                <p class="text-gray-400 text-sm md:text-lg max-w-xl mx-auto leading-relaxed" x-text="gws.beschreibung"></p>
+            </div>
+            <div :class="gwsPrizeGridClass()">
+                <template x-for="(platz,i) in gwsFilledPlaetze" :key="i">
+                    <div class="gws-prize-box rounded-2xl p-4 md:p-5 text-center"><p class="text-[10px] font-black uppercase tracking-widest mb-2" :class="i===0?'c-accent':'text-gray-500'" x-text="platz.label"></p><p class="text-xl md:text-2xl font-black" x-text="platz.wert"></p></div>
+                </template>
+            </div>
+            <div class="mb-8 md:mb-10" :class="gwsBox1Rows().length&gt;0&amp;&amp;gwsBox2Rows().length&gt;0?'grid md:grid-cols-2 gap-4 md:gap-5':'grid grid-cols-1 max-w-xl mx-auto gap-5'">
+                <template x-if="gwsBox1Rows().length&gt;0">
+                    <div class="gws-ticket-box rounded-2xl p-5 md:p-6"><p class="font-black text-base mb-4 c-accent" x-text="gws.box1Titel"></p>
+                        <template x-for="(row,i) in gwsBox1Rows()" :key="i"><div class="flex justify-between text-sm py-2 border-b border-white/[0.04] last:border-0"><span class="text-gray-400" x-text="row.split('|')[0]?.trim()"></span><span class="font-black" x-text="row.split('|')[1]?.trim()"></span></div></template>
+                    </div>
+                </template>
+                <template x-if="gwsBox2Rows().length&gt;0">
+                    <div class="gws-ticket-box rounded-2xl p-5 md:p-6"><p class="font-black text-base mb-4 text-gray-300" x-text="gws.box2Titel"></p>
+                        <template x-for="(row,i) in gwsBox2Rows()" :key="i"><div class="flex justify-between text-sm py-2 border-b border-white/[0.04] last:border-0"><span class="text-gray-400" x-text="row.split('|')[0]?.trim()"></span><span class="font-black" x-text="row.split('|')[1]?.trim()"></span></div></template>
+                        <p x-show="gws.box2Hinweis" class="text-[11px] text-gray-600 mt-3 italic" x-text="gws.box2Hinweis"></p>
+                    </div>
+                </template>
+            </div>
+            <div class="mb-8 md:mb-10">
+                <p class="text-center font-black text-lg mb-7">So nimmst du teil:</p>
+                <div class="space-y-4 max-w-lg mx-auto">
+                    <div class="flex items-start gap-4"><div class="gws-step-num">1</div><p class="text-gray-300 pt-1">Folge uns auf <a :href="gws.instagram" target="_blank" class="font-black c-accent hover:underline">Instagram</a>.</p></div>
+                    <div class="flex items-start gap-4"><div class="gws-step-num">2</div><p class="text-gray-300 pt-1">Trage deine E-Mail unten ein.</p></div>
+                    <div class="flex items-start gap-4"><div class="gws-step-num">3</div><p class="text-gray-300 pt-1">Sende uns einen Screenshot deiner Einzahlung per <strong>Instagram DM</strong>.</p></div>
+                </div>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <template x-if="!gwsSuccess">
+                    <div class="space-y-3">
+                        <input x-model="gwsEmail" type="email" placeholder="deine@email.de" class="gws-input" @keydown.enter="submitGewinnspiel()">
+                        <button @click="submitGewinnspiel()" class="gws-btn" :disabled="gwsSubmitting"><span x-text="gwsSubmitting?'Wird gesendet…':'JETZT TEILNEHMEN'"></span></button>
+                        <p x-show="gwsError" class="text-red-400 text-sm text-center font-bold">Fehler. Bitte erneut versuchen.</p>
+                    </div>
+                </template>
+                <template x-if="gwsSuccess">
+                    <div class="text-center py-8 px-6 rounded-2xl" style="background:var(--accent-10);border:1px solid var(--accent-25)"><div class="text-4xl mb-3">🎉</div><p class="font-black text-lg mb-1">Du bist dabei!</p><p class="text-gray-400 text-sm">Vergiss nicht, uns den Screenshot per Instagram DM zu schicken.</p></div>
+                </template>
+                <p class="text-center text-[10px] text-gray-700 font-bold uppercase tracking-widest mt-5">AUFLÖSUNG: <span x-text="gws.aufloesung"></span> &nbsp;|&nbsp; TEILNAHME AB 18+</p>
+            </div>
+        </div>
+    </template>
+    <template x-if="!gws.aktiv">
+        <div class="gws-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-14 text-center">
+            <div class="text-6xl mb-6">🎰</div>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tighter mb-4">Momentan kein<br>Gewinnspiel aktiv.</h2>
+            <p class="text-gray-500 text-base mb-10 max-w-md mx-auto leading-relaxed">Bitte trage dich hier ein, um auf dem Laufenden zu bleiben – du wirst als Erstes benachrichtigt!</p>
+            <div class="max-w-sm mx-auto space-y-3">
+                <template x-if="!nlSuccess">
+                    <div class="space-y-3">
+                        <input x-model="nlEmail" type="email" placeholder="deine@email.de" class="gws-input" @keydown.enter="submitNewsletter()">
+                        <button @click="submitNewsletter()" class="gws-btn" :disabled="nlSubmitting"><span x-text="nlSubmitting?'Wird gesendet…':'BENACHRICHTIGEN'"></span></button>
+                        <p x-show="nlError" class="text-red-400 text-sm text-center font-bold">Fehler. Bitte erneut versuchen.</p>
+                    </div>
+                </template>
+                <template x-if="nlSuccess">
+                    <div class="py-8 px-6 rounded-2xl" style="background:var(--accent-10);border:1px solid var(--accent-25)"><p class="font-black text-lg mb-1">✓ Eingetragen!</p><p class="text-gray-400 text-sm">Wir melden uns, sobald das nächste Gewinnspiel startet.</p></div>
+                </template>
+            </div>
+        </div>
+    </template>
+</div>
+
+<!-- SUPPORT PAGE -->
+<div x-show="currentPage==='support'" class="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 pb-24 md:pb-32">
+    <div class="text-center mb-10 md:mb-14">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[11px] font-black uppercase tracking-widest mb-7" style="background:var(--accent-10);border:1px solid var(--accent-25);color:var(--accent)"><span class="w-1.5 h-1.5 rounded-full" style="background:var(--accent)"></span>Support Center</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-5">Wir sind für<br><span class="accent-gradient-text">dich da.</span></h1>
+        <p class="text-gray-500 text-base md:text-lg max-w-lg mx-auto leading-relaxed">Egal ob Bonusfrage, technisches Problem oder allgemeiner Wunsch – du bekommst Hilfe.</p>
+    </div>
+    <div class="support-card p-7 md:p-10 mb-5">
+        <div class="flex items-start gap-5 md:gap-7">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 accent-gradient-bg"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+            <div class="flex-grow">
+                <div class="flex items-center gap-3 mb-2 flex-wrap"><h2 class="text-xl font-black tracking-tight">24/7 Casino-Support</h2><span class="text-[9px] font-black px-2.5 py-1 rounded-full bg-green-500/10 text-green-400 border border-green-500/20 uppercase tracking-widest">Immer verfügbar</span></div>
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">Jedes Casino auf unserer Plattform bietet dir einen direkten <strong class="text-white">24/7 Live-Chat-Support</strong> an – rund um die Uhr, 365 Tage im Jahr. Du findest den Chat direkt auf der jeweiligen Casino-Website, meist als kleines Sprechblasen-Symbol in der unteren Ecke.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div class="bg-white/[0.03] rounded-xl p-4 border border-white/[0.05]"><div class="text-2xl mb-2">💬</div><p class="text-xs font-bold text-white mb-1">Live Chat</p><p class="text-[11px] text-gray-600">Direkt auf der Casino-Seite</p></div>
+                    <div class="bg-white/[0.03] rounded-xl p-4 border border-white/[0.05]"><div class="text-2xl mb-2">📧</div><p class="text-xs font-bold text-white mb-1">E-Mail</p><p class="text-[11px] text-gray-600">Antwort innerhalb 24h</p></div>
+                    <div class="bg-white/[0.03] rounded-xl p-4 border border-white/[0.05]"><div class="text-2xl mb-2">📖</div><p class="text-xs font-bold text-white mb-1">FAQ</p><p class="text-[11px] text-gray-600">Direkt im Casino-Hilfe-Center</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="support-coming-soon p-7 md:p-10 mb-5">
+        <div class="flex items-start gap-5 md:gap-7">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 bg-white/[0.04] border border-white/[0.06]"><svg class="w-7 h-7 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></div>
+            <div class="flex-grow">
+                <div class="flex items-center gap-3 mb-2 flex-wrap"><h2 class="text-xl font-black tracking-tight text-gray-400">Direkter Support von uns</h2><span class="text-[9px] font-black px-2.5 py-1 rounded-full bg-white/[0.04] text-gray-500 border border-white/[0.06] uppercase tracking-widest">Coming Soon</span></div>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-5">Wir arbeiten gerade daran, dir einen <strong class="text-gray-500">direkten persönlichen Support</strong> von unserem Team anzubieten. Bald kannst du uns bei Fragen zu Deals, Boni oder Auszahlungen direkt kontaktieren.</p>
+                <div class="flex items-center gap-3 bg-white/[0.02] rounded-xl px-5 py-4 border border-white/[0.04]">
+                    <svg class="w-4 h-4 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <span class="text-[11px] text-gray-700 font-bold tracking-wide">Noch nicht verfügbar – wir halten dich auf dem Laufenden</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rounded-2xl px-6 py-5 flex items-start gap-4" style="background:var(--accent-05);border:1px solid var(--accent-25)">
+        <span class="text-xl flex-shrink-0 mt-0.5">💡</span>
+        <p class="text-sm text-gray-400 leading-relaxed"><strong class="text-white">Tipp:</strong> Bei Fragen zu einem spezifischen Bonus oder einer Auszahlung wende dich am schnellsten direkt an den Live-Chat des jeweiligen Casinos – die können dir am präzisesten helfen.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="max-w-6xl mx-auto px-6 py-16 md:py-24 border-t border-white/[0.02]">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 text-center md:text-left">
+        <div class="space-y-2 order-2 md:order-1"><div class="text-[10px] font-black tracking-[0.3em] text-white opacity-30 uppercase"><span x-text="theme.siteName+theme.siteNameAccent"></span> Premium</div><div class="text-[9px] font-bold text-gray-700 tracking-[0.1em]">© 2026 — ALLE RECHTE VORBEHALTEN / 18+</div></div>
+        <div class="flex flex-col items-center md:items-end gap-3 order-1 md:order-2"><p class="text-[10px] font-bold text-gray-600 tracking-wide uppercase italic">Spiel mit Verantwortung · Hilfe unter <a href="https://www.check-dein-spiel.de" class="text-gray-400 hover:text-white underline transition-all">www.check-dein-spiel.de</a></p></div>
+    </div>
+</footer>
+
+
+<!-- ★ Rohes HTML VOR Alpine speichern – verhindert Duplizierung beim Download ★ -->
+<script>
+(function(){
+    // Dieser Script läuft synchron, BEVOR Alpine.js (defer) den DOM verändert.
+    // Wir speichern den sauberen Template-Quellcode hier.
+    window._cdRawHTML = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+})();
+</script></body></html>
